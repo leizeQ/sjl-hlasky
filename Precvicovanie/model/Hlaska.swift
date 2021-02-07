@@ -1,13 +1,6 @@
-//
-//  Letter.swift
-//  Hlasky
-//
-//  Created by Rastislav Bodi on 07/02/2021.
-//
-
 import Foundation
 
-struct Pismeno {
+struct Hlaska {
   let znak: String
   let typ: TypHlasky
   let podtyp: PodtypHlasky
@@ -18,4 +11,20 @@ struct Pismeno {
     }
     return self.typ == typ && self.podtyp == podtyp
   }
+}
+
+enum TypHlasky {
+  case samohlaska
+  case spoluhlaska
+  case dvojhlaska
+  case none
+}
+
+enum PodtypHlasky {
+  case kratka
+  case dlha
+  case tvrda
+  case makka
+  case obojaka
+  case none
 }

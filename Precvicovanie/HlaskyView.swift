@@ -1,22 +1,15 @@
-//
-//  ContentView.swift
-//  Hlasky
-//
-//  Created by Rastislav Bodi on 07/02/2021.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct HlaskyView: View {
 
-  @State private var currentLetter = DataModel.random()
+  @State private var currentLetter = DataModel.nahodnaHlaska()
   @State private var typSelection = TypHlasky.samohlaska
   @State private var podtypSelection = PodtypHlasky.none
 
   @State private var wrongCount = 0
 
   var body: some View {
-    VStack {
+    VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
       Text(currentLetter.znak)
         .font(.system(size: 140, weight: .bold))
       Picker("typ", selection: $typSelection) {
@@ -35,14 +28,17 @@ struct ContentView: View {
           Text("Dlha").tag(PodtypHlasky.dlha)
         }
       }
-      Button("Dalej", action: next)
       Text("Nespravne odpovede: \(wrongCount)")
+      Button("Dalej", action: next)
+        .padding(.top, 20.0)
     }.pickerStyle(SegmentedPickerStyle())
   }
 
   func next() {
     if currentLetter.je(typu: typSelection, podtypSelection) {
-      currentLetter = DataModel.random()
+      typSelection = .none
+      podtypSelection = .none
+      currentLetter = DataModel.nahodnaHlaska()
     } else {
       wrongCount += 1
     }
@@ -51,6 +47,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    HlaskyView()
   }
 }

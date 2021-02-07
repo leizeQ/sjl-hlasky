@@ -1,2 +1,2 @@
-# sjl-hlasky
-Aplikacia na precvicovanie delenia hlasok v slovenskom jazyku
+# zs-precvicovanie
+Aplikacia na precvicovanie uciva zakladnej skoly
