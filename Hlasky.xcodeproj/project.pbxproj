@@ -11,6 +11,9 @@
 		C8F8383525CFD853007D7E2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F8383425CFD853007D7E2A /* ContentView.swift */; };
 		C8F8383725CFD855007D7E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F8383625CFD855007D7E2A /* Assets.xcassets */; };
 		C8F8383A25CFD855007D7E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F8383925CFD855007D7E2A /* Preview Assets.xcassets */; };
+		C8F8384425CFD87C007D7E2A /* Hlasky.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F8384325CFD87C007D7E2A /* Hlasky.swift */; };
+		C8F8384725CFE598007D7E2A /* Pismeno.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F8384625CFE598007D7E2A /* Pismeno.swift */; };
+		C8F8384A25CFE774007D7E2A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F8384925CFE774007D7E2A /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		C8F8383625CFD855007D7E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8F8383925CFD855007D7E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8F8383B25CFD855007D7E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F8384325CFD87C007D7E2A /* Hlasky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hlasky.swift; sourceTree = "<group>"; };
+		C8F8384625CFE598007D7E2A /* Pismeno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pismeno.swift; sourceTree = "<group>"; };
+		C8F8384925CFE774007D7E2A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		C8F8383125CFD853007D7E2A /* Hlasky */ = {
 			isa = PBXGroup;
 			children = (
+				C8F8384225CFD867007D7E2A /* model */,
 				C8F8383225CFD853007D7E2A /* HlaskyApp.swift */,
 				C8F8383425CFD853007D7E2A /* ContentView.swift */,
 				C8F8383625CFD855007D7E2A /* Assets.xcassets */,
@@ -67,6 +74,16 @@
 				C8F8383925CFD855007D7E2A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8F8384225CFD867007D7E2A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C8F8384925CFE774007D7E2A /* DataModel.swift */,
+				C8F8384325CFD87C007D7E2A /* Hlasky.swift */,
+				C8F8384625CFE598007D7E2A /* Pismeno.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F8384A25CFE774007D7E2A /* DataModel.swift in Sources */,
 				C8F8383525CFD853007D7E2A /* ContentView.swift in Sources */,
+				C8F8384425CFD87C007D7E2A /* Hlasky.swift in Sources */,
 				C8F8383325CFD853007D7E2A /* HlaskyApp.swift in Sources */,
+				C8F8384725CFE598007D7E2A /* Pismeno.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
