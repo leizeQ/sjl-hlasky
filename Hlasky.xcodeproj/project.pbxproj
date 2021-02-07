@@ -26,6 +26,7 @@
 		C8F8384325CFD87C007D7E2A /* Hlasky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hlasky.swift; sourceTree = "<group>"; };
 		C8F8384625CFE598007D7E2A /* Pismeno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pismeno.swift; sourceTree = "<group>"; };
 		C8F8384925CFE774007D7E2A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C8F8384F25CFF2AE007D7E2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		C8F8382625CFD853007D7E2A = {
 			isa = PBXGroup;
 			children = (
+				C8F8384F25CFF2AE007D7E2A /* README.md */,
 				C8F8383125CFD853007D7E2A /* Hlasky */,
 				C8F8383025CFD853007D7E2A /* Products */,
 			);
